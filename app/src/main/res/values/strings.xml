@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FragmentsMenus</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de</string>
+    <string name="menu_favoritos">Favoritos</string>
+    <string name="nombre_mascota">Nombre</string>
+    <string name="rating_mascota">5</string>
+</resources>

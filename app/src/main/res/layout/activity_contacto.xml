@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Contacto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/appbar"></include>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--Nombre del usuario-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/cardview_borde"
+        android:layout_marginLeft="@dimen/cardview_borde">
+        <EditText
+            android:id="@+id/edtNombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--Correo electrónico del usuario-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/cardview_borde"
+        android:layout_marginLeft="@dimen/cardview_borde">
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electónico"
+            android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--Mensaje a enviar-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/cardview_borde"
+        android:layout_marginLeft="@dimen/cardview_borde">
+        <EditText
+            android:id="@+id/edtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mensaje"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--Botón para enviar el mansaje-->
+    <Button
+        android:id="@+id/btnEnviarComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/cardview_borde"
+        android:layout_marginLeft="@dimen/cardview_borde"
+        android:layout_marginBottom="@dimen/cardview_borde"
+        android:text="Enviar comentario"
+        android:theme="@style/estilo_raised_button"/>
+</LinearLayout>
